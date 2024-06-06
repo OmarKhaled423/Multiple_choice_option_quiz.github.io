@@ -94,12 +94,11 @@ const Quizes = [
 ];
 
 let totalQuiz = Quizes.length;
-// console.log(totalQuiz)
 let rightAnswer = 0;
 let wrongAnswer = 0;
 let rightAnswerIndicatore;
 let wrongAnswerIndicatore;
-let countDownDurationSeconds = 1;
+let countDownDurationSeconds = 5;
 let answerTimeOut = 3;
 
 const digitFormateHandler = (singledigitfiger) => {

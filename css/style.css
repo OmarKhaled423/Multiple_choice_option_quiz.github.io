@@ -1,11 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); */
-
-
 
 *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
 }
 
 html, body {
@@ -15,7 +13,6 @@ html, body {
 body {
     font-style: 1rem;
     background-color: #e0e0e0;
-    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
     counter-reset: question-no;
     letter-spacing: 0.9px;
     position: relative;
@@ -118,8 +115,8 @@ ul li {
     transition: background-color .2s cubic-bezier(0, 0, .2, 1);
     background-color: #ffffff;
     border-radius: 8px;
-    margin-bottom: 12px;
-    box-shadow: 1px 1px 4px -1px #463f3f;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 4px -1px #463f3f,0px 0px 4px -1px #463f3f;
     padding: 1.5rem;
     page-break-inside: avoid;
     word-wrap: break-word;
@@ -168,12 +165,13 @@ label {
     margin-block: 6px;
     cursor: pointer;
     color: #1b1b1b;
-    background-color: #dfdfdf;
+    background-color: #e2e2e2e8;
     overflow: hidden;
     display: flex;
     align-items: center;
     text-transform: capitalize;
     border: none;
+    transition: all 200ms ease-in;
 }
 
 label:hover,
@@ -185,6 +183,8 @@ label:focus {
 label.rightanswer {
     background-color: #5bc367;
     outline: 1px solid #17cf45;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #000000;;
     box-shadow: 1px 2px 2px 0px #000000;
 
 }
@@ -193,6 +193,8 @@ label.wronganswer {
     background-color: #e33f3f85;
     outline: 1px solid #ff4c4c;
     box-shadow: 1px 2px 2px 0px #000000;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #000000;;
 
 }
 
@@ -341,6 +343,7 @@ input[type="radio"] {
         font-size: 75%;
     }
 
+
     .header {
         border-radius: 0px;
         padding-inline: 0.5rem;
@@ -366,6 +369,7 @@ input[type="radio"] {
     .container {
         width: min(100%);
         padding-block: 0.2rem;
+        padding-inline: 0.8rem;
         margin-block: 0px !important;
         border-radius: 0px;
     }
@@ -374,11 +378,18 @@ input[type="radio"] {
         padding-inline: 0rem;
     }
 
+    ul li{
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
     .controls-content {
         font-size: 1.1em;
 
+
         h2 mark {
             line-height: 2.5;
+            margin: 0px;
         }
 
 
